@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="form">
+        <form>
+            <input type="text" name="nom" placeholder="Nom"/><br/>
+            <input type="number" name="nbrHabitants" placeholder="Nbr"/><br/>
+            <input type="submit" value="Ajouter"/><br/>
+        </form>
+    </div>
+    <div id="liste">
+        <ul>
+            
+        </ul>
+    </div>
+{% endblock %}
+{% block stylesheets %}
+    <style>
+        #form{
+            float: left;
+        }
+        #liste{
+            float: right;
+        }
+        div{
+            width: 200px;
+            border: 2px solid green;
+        }
+    </style>
+{% endblock %}
